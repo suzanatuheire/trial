@@ -1,0 +1,83 @@
+class BankAccount:
+    bank = "KCB"
+   
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.balance = 0
+   
+    def account_name(self):
+        name = "{} account for {} {}".format(
+        self.bank, self.first_name, self.last_name)
+        return name
+
+acc1 = BankAccount("Seanice" , "Atuhurira")
+acc2 = BankAccount("Pacemaker" , "Madhu")
+print(acc1.account_name())
+print(acc2.account_name()) 
+
+
+class BankAccount:
+    bank = "KCB"
+   
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.balance = 0
+   
+    def account_name(self):
+        name = "{} account for {} {}".format(
+        self.bank, self.first_name, self.last_name)
+        return name
+   
+    def deposit(self, amount):
+        self.balance += amount
+        print("You have deposited {} to your account".format(amount))
+       
+    def get_balance(self):
+        return "The balance for {} is {}".format(self.account_name(), self.balance)
+ 
+
+   
+acc1 = BankAccount("Pacemaker" , "Atuhurira")
+acc2 = BankAccount("Madhu" , "Seanice")
+print(acc1.account_name())
+print(acc2.account_name())
+
+acc1.deposit(100)
+acc2.deposit(50)
+acc1.deposit(75)
+acc2.deposit(-100)
+print(acc2.get_balance())
+print(acc1.get_balance())
+
+class BankAccount:
+  bank="KCB"
+def withdraw(self, amount):
+    if amount > 0:
+        self.balance -= amount
+        print("You have withdrawed {} to your account".format(amount))
+def get_balance(self):
+    return "The balance of {} is {} ".format(self.account_name(),self.balance)
+    
+    
+acc1=BankAccount("Atukunda","Sue")
+acc2=BankAccount("Joanna", "Comfort")
+
+acc1.deposit(500000)
+acc2.deposit(12000)
+acc1.deposit(1600000)
+acc2.deposit(450000)
+acc1.withdraw(20000)
+acc2.withdraw(10000)
+acc1.withdraw(40000)
+acc2.withdraw(5000)
+print(acc1.get_balance())
+print(acc2.get_balance())
+
+print(acc1.account_name())
+print(acc2.account_name())   
+    
+    
+  
+
